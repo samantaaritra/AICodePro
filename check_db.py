@@ -1,6 +1,10 @@
-from sqlalchemy import create_engine, inspect
+from src.db import SessionLocal, PullRequest
 
-engine = create_engine("sqlite:///data/aicodepro.db")
-inspector = inspect(engine)
-
-print("Tables in DB:", inspector.get_table_names())
+session = SessionLocal()
+prs = session.query(PullRequest).all()
+print(f"Total PRs stored: {len(prs)}")
+for pr in prs[:5]:
+    print(
+        f"PR {pr.pr_id} by {pr.author} | "
+        f"Files: {pr.files_changed}, +{pr.lines_added}/-{pr.lines_deleted}"
+    )
