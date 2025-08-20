@@ -209,4 +209,5 @@ __pycache__/
 *.pyc
 # Ignore SQLite DB after first commit
 data/*.db
-
+# Ignore PR metadata snapshots
+data/pr_data.json
