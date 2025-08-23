@@ -20,29 +20,6 @@ API: GitHub REST API
 Tools: Git, VS Code
 Version Control: GitHub
 
-Project Stucture (tentative)
-AICodePro/
-│
-├── data/                  # Stores PR data & JSON files
-│   ├── clean_prs.json
-│   ├── pr_diffs.json
-│   ├── labeled_prs.json
-│   └── predicted_prs.json
-│
-├── models/                # Trained ML models
-│   └── pr_model.pkl
-│
-├── src/                   # Source code
-│   ├── __init__.py
-│   ├── fetch_prs.py
-│   ├── analyze_prs.py
-│   ├── fetch_diffs.py
-│   ├── label_prs.py
-│   ├── train_model.py
-│   └── predict_prs.py
-│
-├── requirements.txt       # Dependencies
-└── README.md
 
 Future Enhancements
 ✅ Add deep learning models for advanced predictions
@@ -53,3 +30,4 @@ Future Enhancements
 👨‍💻 Author
 Aritra Samanta
 📌 Pre-final Year Computer Science Student
+
