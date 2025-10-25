@@ -211,3 +211,5 @@ __pycache__/
 data/*.db
 # Ignore PR metadata snapshots
 data/pr_data.json
+data/pr_files.json
+
